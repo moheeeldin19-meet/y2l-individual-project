@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <title>{{instrument}}</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+        </head>
+
+    <body >
+                
+
+        <h1> {{instrument}}:</h1>
+        <br>
+        <br>
+        
+        
+
+
+{% for i in Users.query_by_instrument{{instrument}} %}
+  <div class="card-header">{{user.name}}:</div>
+  <div class="card-body">
+    
+    <p class="card-text"> </div> <br><div class= "text">  {{User.age}} <br><br>  <br>  <div class= "text">{{User.email}} <br>{{User.skill_level }} <br> {{User.genre}}.</div> <br> {{User.instrument}} </div><br> <br> </p>
+  </div>
+</div>
+{%endfor%}
+
+        
+        <br>
+        </div>
+        </center>
+    </body >
+</html>

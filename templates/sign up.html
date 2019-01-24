@@ -8,17 +8,20 @@
 </head>
 <body>
 	<h4>BumbleBee</h4>
-	<a href="/join_band"><button>join a band</button></a>
+	<a href="/join_band"><button>look for a band</button></a> 
 	<!-- <button>find an event</button> -->
 	<br>
 	<!-- <img src=""> -->
 	<br>
-	<form>
+	<form action="/sign_up" method="post">
 		<input type="text" name="email" placeholder="E-mail">
-		<input type="password" name="password" placeholder="New Password">
+		<!-- <input type="password" name="password" placeholder="New Password"> -->
 		<br>
 		<br>
-	<h5>skill level</h5>
+		<h5>Your details</h5>
+		<input type="text" name="name" placeholder="Name">
+		<input type="text" name="age" placeholder="age">	
+	    <h5>skill level</h5>
 		<input type="radio" name="skill_level" value="begginer">begginer
 		<input type="radio" name="skill_level" value="intermediate">intermediate
 		<input type="radio" name="skill_level" value="advanced">advanced
@@ -42,8 +45,8 @@
 		<input type="radio" name="instrument" value="vocals">Vocals
 		<input type="text" name="instrument" placeholder="other">
 		<br>
-		<input type="submit" name="submit" value="Sign up" onclick="add_user(email,password,skill_level,genre,instrument)">
-	</form>
+		<input type="submit" name="submit" value="Sign up" >
+	</form>	
 	<br>
 
 </body

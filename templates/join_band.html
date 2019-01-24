@@ -14,14 +14,12 @@
 	<!-- <img src=""> -->
 	<br>
 		<h5>I'm looking for</h5>
-		<input type="checkbox" name="instrument" value="guitar">Guitarist
-		<input type="checkbox" name="instrument" value="bass">Bassist
-		<input type="checkbox" name="instrument" value="Drums">Drummer
-		<input type="checkbox" name="instrument" value="piano">Pianist
-		<input type="checkbox" name="instrument" value="vocals">Vocalist
-		<input type="checkbox" name="instrument" value="Other">Other
-		<br>
-		<input type="submit" name="submit" value="Submit" onclick="query_user_by_instrument(instrument)">
+            {% for i in instruments %}
+                <a href="/join_band/{{instrument}}">
+        		<button  type="button" class="btn btn-outline-light" >{{interest}}</button>
+                </a>
+            
+            {%endfor%} 
 	</form>
 	<br>
 
