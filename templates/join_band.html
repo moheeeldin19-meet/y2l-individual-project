@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="static/style.css">
+	<link rel="stylesheet" href="static/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<title>bumblebee-join a band</title>
 </head>
-<body>
+<body >
+
 	<h4>BumbleBee</h4>
 	<!-- <button>join a band</button> -->
 	<!-- <button>find an event</button> -->
-	<br>
-	<!-- <img src=""> -->
-	<br>
+
 		<h5>I'm looking for</h5>
-            {% for i in instruments %}
+            {% for instrument in instruments %}
                 <a href="/join_band/{{instrument}}">
-        		<button  type="button" class="btn btn-outline-light" >{{interest}}</button>
+        		<button  type="button" class="btn btn-outline-dark" >{{instrument}}</button>
                 </a>
             
             {%endfor%} 

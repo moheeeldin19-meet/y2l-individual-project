@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="static/style.css">
+	<link rel="stylesheet" href="static/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<title>sign up</title>
 </head>
 <body>
 	<h4>BumbleBee</h4>
-	<a href="/join_band"><button>look for a band</button></a> 
+	<a href="/join_band"><button class="btn btn-outline-dark">look for a band</button></a> 
 	<!-- <button>find an event</button> -->
 	<br>
 	<!-- <img src=""> -->
 	<br>
 	<form action="/sign_up" method="post">
-		<input type="text" name="email" placeholder="E-mail">
+		
 		<!-- <input type="password" name="password" placeholder="New Password"> -->
 		<br>
 		<br>
-		<h5>Your details</h5>
+		<h3>Your details</h3>
 		<input type="text" name="name" placeholder="Name">
-		<input type="text" name="age" placeholder="age">	
-	    <h5>skill level</h5>
-		<input type="radio" name="skill_level" value="begginer">begginer
-		<input type="radio" name="skill_level" value="intermediate">intermediate
-		<input type="radio" name="skill_level" value="advanced">advanced
+		<input type="text" name="age" placeholder="Age">
+		<input type="text" name="email" placeholder="E-mail">		
+	    <h3>skill level</h3>
+	    <label class="container">- Begginer
+			<input type="radio" name="skill_level" value="begginer">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Intermediate
+			<input type="radio" name="skill_level" value="intermediate">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Advanced
+			<input type="radio" name="skill_level" value="advanced">
+			<span class="checkmark"></span>
+		</label>
+		
 		<br>
-		<h5>preferred genre</h5>
+		<h3>preferred genre</h3	>
 		<br>
-		<input type="radio" name="genre" value="rock">Rock
-		<input type="radio" name="genre" value="jazz">jazz
-		<input type="radio" name="genre" value="blues">Blues
-		<input type="radio" name="genre" value="pop">Pop
-		<input type="radio" name="genre" value="metal">Metal
-		<input type="radio" name="genre" value="country">Country
-		<input type="radio" name="genre" value="reggae">Reggae
-		<input type="radio" name="genre" value="classical">Classical
+		<label class="container">- Rock
+			<input type="radio" name="genre" value="rock">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Jazz
+			<input type="radio" name="genre" value="jazz">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Blues
+			<input type="radio" name="genre" value="blues">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Pop
+			<input type="radio" name="genre" value="pop">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Metal
+			<input type="radio" name="genre" value="metal">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Country
+			<input type="radio" name="genre" value="country">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Regagae
+			<input type="radio" name="genre" value="reggae">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Classical
+			<input type="radio" name="genre" value="classical">
+			<span class="checkmark"></span>
+		</label>
 		<br>
-		<h5>instrument</h5>
-		<input type="radio" name="instrument" value="guitar">Guitar
-		<input type="radio" name="instrument" value="bass">Bass
-		<input type="radio" name="instrument" value="Drums">Drums
-		<input type="radio" name="instrument" value="piano">piano
-		<input type="radio" name="instrument" value="vocals">Vocals
-		<input type="text" name="instrument" placeholder="other">
+		<h3>instrument</h3>
+		<label class="container">- Guitar
+			<input type="radio" name="instrument" value="Guitar">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Bass
+			<input type="radio" name="instrument" value="Bass">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Drums
+			<input type="radio" name="instrument" value="Drums">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Piano
+			<input type="radio" name="instrument" value="Piano">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Violin
+			<input type="radio" name="instrument" value="Violin">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Vocals
+			<input type="radio" name="instrument" value="Vocals">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">- Saxophone
+			<input type="radio" name="instrument" value="Saxophone">
+			<span class="checkmark"></span>
+		</label>
+
 		<br>
 		<input type="submit" name="submit" value="Sign up" >
 	</form>	
