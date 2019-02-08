@@ -19,18 +19,18 @@
         
 
 <div class="center">
-{% for User in instruments %}
-<div id= "card" class="card border-light mb-3" style="max-width: 25rem;">
-  <div class="card-header">Name:{{User.name}}:</div>
-  <div class="card-body">
-    
-    <p class="card-text">  <br><div class= "text"> Age:  {{User.age}}.</div> <br><br> <div class= "titles">E-mail:{{User.email}}</div> <br>  <div class= "text">Skill Level:{{User.skill_level }}</div> <br> <br> <div class= "titles">Genre:{{User.genre}}</div>  <br> <br> <br> <br></p>
-  </div>
-</div>
-  </div>
-</div>
-{%endfor%}
-</div>
+    {% for User in instruments %}
+    <div id= "card" class="card border-light mb-3" style="max-width: 25rem;">
+      <div class="card-header">Name:{{User.name}}:</div>
+      <div class="card-body">
+        
+        <p class="card-text">  <br><div class= "text"> Age:  {{User.age}}.</div> <br><br> <div class= "titles">E-mail:{{User.email}}</div> <br>  <div class= "text">Skill Level:{{User.skill_level }}</div> <br> <br> <div class= "titles">Genre:{{User.genre}}</div>  <br> <br> <br> <br></p>
+      </div>
+    </div>
+      </div>
+    </div>
+    {%endfor%}
+    </div>
         
         <br>
         </div>

@@ -214,6 +214,10 @@ body {
   background-color: #eee;
   border-radius: 50%;
 }
+#card{
+	position: relative;
+	align-items: center;
+	background-color: rgba(104, 77, 70, 0.7);
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
