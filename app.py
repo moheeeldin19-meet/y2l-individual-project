@@ -13,8 +13,8 @@ def join_band():
     if request.method=='GET':
         return render_template('join_band.html' ,   instruments = ['Guitar',"Drums",'Piano',"Bass","Violin",'Vocals','Saxophone'])
     else :
-    	instrument=request.form["instrument"]
-    	query_user_by_instrument(instrument)
+        instrument=request.form["instrument"]
+        query_user_by_instrument(instrument)
 
 # @app.route('/sign_in',methods=['GET','POST'])
 # def sign_in():
@@ -29,16 +29,16 @@ def sign_up():
     else :
         name=request.form['name']
         age=request.form['age']
-    	email =request.form['email']
+        email =request.form['email']
         skill_level =request.form['skill_level']
-    	genre=request.form["genre"]
-    	instrument=request.form["instrument"]
-    	add_user(name,age,email,skill_level,genre,instrument)
-    	return redirect("join_band")
+        genre=request.form["genre"]
+        instrument=request.form["instrument"]
+        add_user(name,age,email,skill_level,genre,instrument)
+        return redirect("join_band")
 @app.route('/join_band/<string:instrument>')
 def find_bandmates(instrument):
     instrument=instrument
     instruments=query_user_by_instrument(instrument)
     return render_template('instrument.html', instruments=instruments,instrument=instrument)
 if __name__ == '__main__':
-	app.run(debug=True)
+    app.run(debug=True)
