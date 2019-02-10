@@ -11,7 +11,7 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
-def add_user(name,age,email,skill_level,genre,instrument):
+def add_user(name,age,email,skill_level,genre,instrument,notes):
 
   user_object = User(
     name=name,
@@ -19,7 +19,8 @@ def add_user(name,age,email,skill_level,genre,instrument):
     email=email,
     skill_level=skill_level,
     genre =genre, 
-    instrument= instrument)
+    instrument= instrument,
+    notes=notes)
   print(user_object)
   session.add(user_object)
   session.commit()

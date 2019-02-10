@@ -15,3 +15,4 @@ class User(Base):
 	skill_level= Column(String)
 	genre= Column(String)
 	instrument=Column(String)
+	notes=Column(String)

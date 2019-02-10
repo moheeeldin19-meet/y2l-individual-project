@@ -3,15 +3,16 @@ from database import*
 from model import *
 app = Flask(__name__)
 
-@app.route('/')
-def home_page():
-    return render_template("home.html")
+# @app.route('/')
+# def home_page():
+
+#     return render_template("home.html")
 
 
-@app.route('/join_band',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 def join_band():
     if request.method=='GET':
-        return render_template('join_band.html' ,   instruments = ['Guitar',"Drums",'Piano',"Bass","Violin",'Vocals','Saxophone'])
+        return render_template('home.html' ,   instruments = ['Acoustic Guitar','Electric Guitar',"Drums",'Piano',"Bass","Violin",'Vocals','Saxophone','Oud','Trumpet','Flute',"Musical Triangles",'Kazoo','Other'])
     else :
         instrument=request.form["instrument"]
         query_user_by_instrument(instrument)
@@ -33,8 +34,9 @@ def sign_up():
         skill_level =request.form['skill_level']
         genre=request.form["genre"]
         instrument=request.form["instrument"]
-        add_user(name,age,email,skill_level,genre,instrument)
-        return redirect("join_band")
+        notes=request.form["notes"]
+        add_user(name,age,email,skill_level,genre,instrument,notes)
+        return redirect("/")
 @app.route('/join_band/<string:instrument>')
 def find_bandmates(instrument):
     instrument=instrument

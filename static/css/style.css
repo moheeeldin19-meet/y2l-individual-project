@@ -98,11 +98,17 @@ img {
   margin: auto;
   width: 10%;
 font-family: "Comic Sans MS";
-font-size:50px;
+font-size:40px;
 }
 .center1 {
   margin: auto;
   width: 6%;
+font-family: "Comic Sans MS";
+font-size:50px;
+}
+.center2 {
+  margin: auto;
+  width: 11.8%;
 font-family: "Comic Sans MS";
 font-size:50px;
 }
@@ -216,10 +222,12 @@ body {
 }
 #card{
 	position: relative;
+	right: 50px;
 	align-items: center;
 	background-color: rgba(104, 77, 70, 0.7);
-
+}
 /* On mouse-over, add a grey background color */
+
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }

@@ -2,7 +2,7 @@
     <head>
         <title>{{instrument}}</title>
         <link rel="stylesheet" href="static/css/style.css">
-        <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -18,22 +18,20 @@
         
         
 
-<div class="center">
+
     {% for User in instruments %}
-    <div id= "card" class="card border-dark mb-3" style="max-width: 25rem;">
-      <div class="card-header">Name:{{User.name}}:</div>
-      <div class="card-body">
-        
-        <p class="card-text">  <br><div class= "text"> Age:  {{User.age}}.</div> <br><br> <div class= "titles">E-mail:{{User.email}}</div> <br>  <div class= "text">Skill Level:{{User.skill_level }}</div> <br> <br> <div class= "titles">Genre:{{User.genre}}</div>  <br> <br> <br> <br></p>
-      </div>
-    </div>
-      </div>
-    </div>
+        <div id= "card" class="card border-dark mb-3" style="max-width: 25rem;">
+          <div class="card-header">Name:{{User.name}}:</div>
+          <div class="card-body">
+            
+            <p class="card-text">  <br><div class= "text"> Age:  {{User.age}}.</div> <br> <div class= "titles">E-mail:{{User.email}}</div> <br>  <div class= "text">Skill Level:{{User.skill_level }}</div>  <br> <div class= "titles">Genre:{{User.genre}}</div> Notes:{{User.notes}}</div>   <br></p>
+          </div>
+        </div>
+
     {%endfor%}
-    </div>
         
         <br>
-        </div>
-        </center>
+
+
     </body >
 </html>
