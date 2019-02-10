@@ -4,11 +4,12 @@
 	<link rel="stylesheet" href="static/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="shortcut icon" type="image/jpg" href="static/css/icon.png">
-	<title>sign up</title>
+	<title>Register</title>
 </head>
+<style type="text/css">h1,h2,h3,h5,h6,input,p,.container,a{ font-family:"Comic Sans MS"}</style>
 <body style="background-color: yellow">
-	<h4>BumbleBee</h4>
-	<a href="/"><button class="btn btn-outline-dark">look for a band</button></a> 
+	<h4 style="font-family:Comic Sans MS">BumbleBee</h4>
+	<a href="/"><button class="btn btn-outline-dark" >look for a band</button></a> 
 	<!-- <button>find an event</button> -->
 	<br>
 	<!-- <img src=""> -->
@@ -19,9 +20,12 @@
 		<br>
 		<br>
 		<h3>Your details</h3>
-		<input type="text" name="name" placeholder="Name">
-		<input type="text" name="age" placeholder="Age">
-		<input type="text" name="email" placeholder="E-mail">		
+		<input type="text" name="name" placeholder="Name" style="  border: 2px solid black;
+  border-radius: 4px; ">
+		<input type="text" name="age" placeholder="Age" style="  border: 2px solid black;
+  border-radius: 4px;">
+		<input type="text" name="email" placeholder="E-mail" style="  border: 2px solid black;
+  border-radius: 4px;">		
 	    <h3>skill level</h3>
 	    <label class="container">- Begginer
 			<input type="radio" name="skill_level" value="begginer">
@@ -130,9 +134,10 @@
 			<span class="checkmark"></span>
 		</label>
 
-		<input type="text" name="notes" placeholder="Notes">
+		<input type="text" name="notes" placeholder="Notes" style="height: 100px;position: relative;left: 10px;  border: 2px solid black;
+  border-radius: 4px;">
 		<br>
-		<input type="submit" name="submit" value="Sign up" >
+		<input type="submit" name="submit" value="Register" style="position: relative;left: 10px" >
 	</form>	
 	<br>
 

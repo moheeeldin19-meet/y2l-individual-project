@@ -4,7 +4,8 @@ $cells: $cols * $rows;
 $bgcolor: #000000;
 $shapeHeight: 230;
 $shapeWidth: 200;
-
+h1,h2,h3,h5,h6,input,p,button,.container,a{
+ font-family:"Comic Sans MS"}
 body {
   margin: 0;
   background-color: $bgcolor;
